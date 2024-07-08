@@ -52,11 +52,11 @@ describe('Contact page login test', () => {
     });
 
     it('should delete contact', () => {
-        cy.contains('td', '49 W 2nd street').click();
-        cy.get('#delete').click();
         cy.on('window:alert', (acceptConfirm) => {
             expect(acceptConfirm).to.contains('Are you sure you want to delete this contact?');
         })
+        cy.contains('td', '49 W 2nd street').click();
+        cy.get('#delete').click();
     });
 
 
