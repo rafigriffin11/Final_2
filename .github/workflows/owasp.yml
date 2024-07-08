@@ -1,4 +1,4 @@
-            - name: ZAP Baseline Scan
+- name: ZAP Baseline Scan
   # You may pin to the exact commit or the version.
   # uses: zaproxy/action-baseline@66042c8e7e24680119199a017e5b0e8603bf4dae
   uses: zaproxy/action-baseline@v0.12.0
